@@ -1,7 +1,6 @@
 {
   "name": "adp-plugin-dima",
-  "version": "0.2.0",
-  "private": true,
+  "version": "0.2.1",
   "type": "module",
   "description": "Agent Discord Presence plugin for dima (Dim Rust alpha)",
   "license": "MIT",
@@ -12,6 +11,14 @@
   "engines": {
     "node": ">=22"
   },
+  "files": [
+    "adp-plugin.json",
+    "dim-plugin.json",
+    "index.js",
+    "extension.mjs",
+    "extension.d.mts",
+    "icon.png"
+  ],
   "scripts": {
     "check": "node --check index.js && node --check extension.mjs",
     "test": "node --test test/*.test.mjs"

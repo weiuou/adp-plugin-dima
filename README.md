@@ -7,20 +7,33 @@ also supported.
 
 ## Install
 
-Requires an ADP build with external Agent plugins and GitHub installation support.
+### npm
+
+Use an ADP build that supports global npm plugin discovery.
+
+```sh
+npm install -g adp-plugin-dima
+```
+
+ADP discovers the globally installed package. To import it explicitly, open
+**Agents → Install from GitHub or npm…** and enter `npm:adp-plugin-dima`.
+To update, run `npm install -g adp-plugin-dima@latest`, refresh **Agents**, and
+follow the dima setup steps below for the updated copy.
+
+### GitHub
 
 ```sh
 adp plugin install github:weiuou/adp-plugin-dima
 ```
 
-Then run the `dima plugin install` command printed by ADP and reload or restart
-dima. The package contains ready-to-run JavaScript and needs no build or npm
-dependencies.
+In the desktop client, use the GitHub or npm installer and enter
+`github:weiuou/adp-plugin-dima`.
 
-In the desktop client, open **Agents → Install from GitHub…** and enter
-`github:weiuou/adp-plugin-dima`. Use **DimAgent → Setup → Manual configuration**
-for the dima installation command and event options. ADP installation alone does
-not load the plugin into dima.
+### Set up dima
+
+Run the `dima plugin install` command shown in **DimAgent → Setup → Manual
+configuration** or printed by the ADP CLI, then reload or restart dima. The
+package contains ready-to-run JavaScript and needs no build or npm dependencies.
 
 The Agent ID remains `dimagent`, preserving existing settings. The installed copy
 uses ADP's generated `.adp-runtime.json`; loading this checkout directly in dima

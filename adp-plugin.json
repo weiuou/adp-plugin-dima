@@ -2,7 +2,7 @@
   "apiVersion": 1,
   "id": "dimagent",
   "name": "DimAgent",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Dim Rust alpha (dima) sessions, approval waits and native auxiliary-model summaries. Shares existing DimAgent settings.",
   "icon": "icon.png",
   "presenceImage": "https://dimagent.cn/favicon.png",
